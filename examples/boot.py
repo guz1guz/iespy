@@ -36,8 +36,8 @@ def main():
     gc.enable()
 
     # Wi-Fi credentials
-    SSID = ""
-    PASSWORD = ""
+    SSID = "EXP"
+    PASSWORD = "201060dx"
 
     connect_wlan(SSID, PASSWORD)
 
@@ -45,7 +45,7 @@ def main():
     upip.install("micropython-senko")
 
     import senko
-    OTA = senko.Senko(user="RangerDigital", repo="senko", working_dir="examples", files=["main.py"])
+    OTA = senko.Senko(user="guz1guz", repo="iespy", working_dir="examples", files=["main.py"])
 
     if OTA.update():
         print("Updated to the latest version! Rebooting...")
