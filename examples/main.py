@@ -128,7 +128,7 @@ x_symbol   = [
              ]
 
 while(True):
-    if( sensor1.distance_cm() > 200):
+    if( sensor2.distance_cm() > 200):
         display(arrow_down, 100)
         sleep(1)
     else:
