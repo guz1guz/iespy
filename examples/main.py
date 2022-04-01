@@ -45,7 +45,7 @@ def display(value_list, no_of_cycles = 100):
                                
             latch.on()
             columns[j].off()
-            sleep_us(1000)
+            sleep_us(100)
             columns[j].on()            
 
             
@@ -153,17 +153,17 @@ number_2   = [
 
 number_3   = [
                 [0,0,0,0,0,0,0,0,0,0],
-                [1,0,1,0,1,0,0,0,1,0],
+                [1,0,1,0,1,0,1,0,1,0],
                 [1,0,0,0,1,0,0,0,1,0],
-                [1,0,0,0,1,0,1,0,1,0],
+                [1,0,0,0,1,0,0,0,1,0],
                 [0,0,0,0,0,0,0,0,0,0]
              ]
 
 number_4   = [
                 [0,0,0,0,0,0,0,0,0,0],
-                [1,0,1,0,1,0,1,0,1,0],
-                [0,0,0,0,1,0,0,0,0,0],
                 [1,0,1,0,1,0,0,0,0,0],
+                [0,0,0,0,1,0,0,0,0,0],
+                [1,0,1,0,1,0,1,0,1,0],
                 [0,0,0,0,0,0,0,0,0,0]
              ]
 
@@ -206,6 +206,22 @@ number_9   = [
                 [1,0,1,0,1,0,0,0,1,0],
                 [0,0,0,0,0,0,0,0,0,0]
              ]
+red_frame = [
+                [1,0,1,0,1,0,1,0,1,0],
+                [1,0,1,0,1,0,1,0,1,0],
+                [1,0,1,0,1,0,1,0,1,0],
+                [1,0,1,0,1,0,1,0,1,0],
+                [1,0,1,0,1,0,1,0,1,0],
+             ]
+
+green_frame = [
+                [0,1,0,1,0,1,0,1,0,1],
+                [0,1,0,1,0,1,0,1,0,1],
+                [0,1,0,1,0,1,0,1,0,1],
+                [0,1,0,1,0,1,0,1,0,1],
+                [0,1,0,1,0,1,0,1,0,1],
+             ]
+
 '''
 while(True):
     if( sensor2.distance_cm() > 200):
@@ -216,17 +232,14 @@ while(True):
 '''
 
 while(True):
-    display( x_symbol, 200)
-    display( arrow_down, 200)
-    display( number_0, 200)
-    display( number_1, 200)
-    display( number_2, 200)
-    display( number_3, 200)
-    display( number_4, 200)
-    display( number_5, 200)
-    display( number_6, 200)
-    display( number_7, 200)
-    display( number_8, 200)
-    display( number_9, 200)
+    for i in range(5)
+        display( x_symbol, 2000)
+        display( arrow_down, 2000)
+    for i in range(5)
+        display( red_frame, 2000)
+        display( green_frame, 2000)
+        
+        
+
     
 
