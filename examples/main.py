@@ -1,7 +1,7 @@
 from machine import Pin
 from time import sleep
 from utime import sleep_us
-from hcsr04 import HCSR04
+#from hcsr04 import HCSR04
 
 ############################################################
 # Subroutine Space
@@ -101,9 +101,9 @@ col_9      = Pin( col_9_pin, Pin.OUT)
 col_10     = Pin( col_10_pin, Pin.OUT)
 
 
-sensor1 = HCSR04( sensor1_trig, sensor1_echo, echo_timeout_us = 1000000)
-sensor2 = HCSR04( sensor2_trig, sensor2_echo, echo_timeout_us = 1000000)
-sensor3 = HCSR04( sensor3_trig, sensor3_echo, echo_timeout_us = 1000000)
+#sensor1 = HCSR04( sensor1_trig, sensor1_echo, echo_timeout_us = 1000000)
+#sensor2 = HCSR04( sensor2_trig, sensor2_echo, echo_timeout_us = 1000000)
+#sensor3 = HCSR04( sensor3_trig, sensor3_echo, echo_timeout_us = 1000000)
 ############################################################
 # MAIN subroutine  #########################################
 
